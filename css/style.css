@@ -134,7 +134,7 @@ body {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		position: relative;
-		background-image: url(images/bg-pattern-desktop.svg);
+		background-image: url(/images/bg-pattern-desktop.svg);
 		background-size: 80%;
 		background-position: left;
 		background-position-x: -36rem;
