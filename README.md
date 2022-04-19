@@ -20,7 +20,7 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/alyssasitto/faq-card-project)
-- Live Site URL: [Add live site URL here](https://faq-card-563891.netlify.app/)
+- Live Site URL: [Add live site URL here](https://faq-card-822319.netlify.app/)
 
 ## My process
 
@@ -46,5 +46,5 @@ I am going to constinue learnig how to use absolute and relative positioning alo
 
 ## Author
 
-- Website - [Add your name here](https://faq-card-563891.netlify.app/)
+- Website - [Add your name here](https://faq-card-822319.netlify.app/)
 - Frontend Mentor - [@alyssasitto](https://www.frontendmentor.io/profile/alyssasitto)

@@ -92,10 +92,6 @@ body {
 
 /********** ACTIVE/IDLE STYLES ***********/
 
-.faq:hover .question p {
-	color: hsl(14, 88%, 65%);
-}
-
 .answer {
 	max-height: 0;
 	overflow: hidden;
@@ -182,5 +178,9 @@ body {
 
 	.faqs h1 {
 		text-align: left;
+	}
+
+	.faq:hover .question p {
+		color: hsl(14, 88%, 65%);
 	}
 }
