@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+	--soft-violet: #af67e9;
+	--soft-blue: #6565e7;
+	--white: #fff;
+	--dark-blue: #1d1e35;
+	--grey-blue: #787887;
+	--dark-grey-blue: #4a4b5e;
+	--light-grey: #e7e7e9;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	padding: 14.7rem 2.4rem 8.3rem;
+	min-height: 100vh;
+	font-family: "Kumbh Sans", sans-serif;
+	background-image: linear-gradient(var(--soft-violet), var(--soft-blue));
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.faq-card {
+	position: relative;
+	min-width: 32.7rem;
+	background-color: var(--white);
+	background-image: url(images/bg-pattern-mobile.svg);
+	background-position: top;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+}
+
+/********** MOBILE ILLUSTRATION STYLES ***********/
+
+.mobile-woman-illus {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -57%);
+	width: 100%;
+	height: auto;
+	max-width: 24rem;
+}
+
+/********** FAQ STYLES ***********/
+
+.faqs {
+	padding: 13rem 2.4rem 4.7rem;
+}
+
+.faqs h1 {
+	font-size: 3.4rem;
+	margin-bottom: 1.2rem;
+	text-align: center;
+	color: var(--dark-blue);
+}
+
+.faq {
+	padding: 1.6rem 0;
+	border-bottom: 1px solid var(--light-grey);
+}
+
+.question {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+
+.question p {
+	font-size: 1.4rem;
+	color: var(--dark-grey-blue);
+	transition: all 0.5s;
+}
+
+.answer p {
+	font-size: 1.3rem;
+	margin-top: 1.2rem;
+	padding-right: 2rem;
+	line-height: 1.4;
+	color: var(--grey-blue);
+}
+
+/********** ACTIVE/IDLE STYLES ***********/
+
+.faq:hover .question p {
+	color: hsl(14, 88%, 65%);
+}
+
+.answer {
+	max-height: 0;
+	overflow: hidden;
+}
+
+.faq.active .question p {
+	font-weight: bold;
+	color: #4a4b5e;
+}
+
+.faq.active .answer {
+	max-height: 500px;
+}
+
+.faq.active .icon {
+	transform: rotate(180deg);
+}
+
+.icon {
+	transition: transform 0.5s ease-in;
+}
+
+/********** HELPER CLASS ***********/
+
+.hidden {
+	display: none;
+}
+
+/********** DESKTOP STYLES ***********/
+
+@media screen and (min-width: 1000px) {
+	body {
+		padding: 0rem 28rem;
+	}
+
+	.faq-card {
+		min-width: 92rem;
+		background-image: none;
+		align-items: center;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		position: relative;
+		background-image: url(images/bg-pattern-desktop.svg);
+		background-size: 80%;
+		background-position: left;
+		background-position-x: -36rem;
+	}
+
+	/********* ILLUSTRATION STYLES **********/
+
+	.card-illustrations {
+		overflow: hidden;
+	}
+
+	.mobile-woman-illus {
+		display: none;
+	}
+
+	.desktop-woman-illus,
+	.desktop-box {
+		display: block;
+	}
+
+	.desktop-woman-illus {
+		width: 100%;
+		transform: translateX(-80px);
+		position: relative;
+	}
+
+	.desktop-box {
+		position: absolute;
+		top: 0;
+		transform: translate(-49%, 180%);
+		z-index: 1;
+		position: fixed;
+	}
+
+	/********* FAQ STYLES **********/
+
+	.faqs {
+		width: 44.5rem;
+		padding: 6.5rem 6.5rem 8.4rem 0;
+	}
+
+	.faqs h1 {
+		text-align: left;
+	}
+}
